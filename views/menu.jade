@@ -1,0 +1,9 @@
+ul
+  for stream in streams
+    li
+        if stream.name == 'All' 
+            a(href='/') #{stream.name}
+        else
+            a(href='/stream/' + stream.name) #{stream.name}
+  else
+    li No streams available!

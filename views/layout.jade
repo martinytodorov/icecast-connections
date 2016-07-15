@@ -1,0 +1,28 @@
+doctype
+html
+  head
+    title #{title} - Listeners.metacast.eu
+    link(rel='stylesheet', href='/addons/pure-release-0.6.0/pure-min.css')
+    link(rel='stylesheet', href='/addons/pure-release-0.6.0/grids-responsive-min.css')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='https://www.gstatic.com/charts/loader.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+    script(src='/gchart.js')
+  body
+    div#layout.pure-g
+        div.sidebar.pure-u-4-24
+            .center
+                img(src= "/images/metacast_on_dark.png").logo
+            block sidebar
+        div.content.pure-u-20-24
+            header
+              
+                if dstream
+                    h1 Listeners.metacast.eu - #{dstream.name}
+                else
+                    h1 Listeners.metacast.eu 
+            div
+              .main-content
+                block content
+            footer
+              p Copyright Listeners Metacast 2016

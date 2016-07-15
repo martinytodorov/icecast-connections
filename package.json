@@ -1,0 +1,26 @@
+{
+  "name": "listeners.metacast.eu",
+  "version": "1.0.0",
+  "description": "Analytics for the data returned by Icecast",
+  "main": "app/app.js",
+  "dependencies": {
+    "basic-auth-connect": "^1.0.0",
+    "csv": "^0.4.6",
+    "express": "^4.13.4",
+    "http-parser-js": "^0.4.2",
+    "jade": "^1.11.0",
+    "mongodb": "^2.1.16",
+    "request": "^2.71.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "icecast"
+  ],
+  "author": "Martin Todorov",
+  "license": "ISC"
+}

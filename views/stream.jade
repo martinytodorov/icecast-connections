@@ -1,0 +1,13 @@
+extend layout
+block sidebar
+  .widget
+    h1 Listeners.metacast.eu - #{dstream.name}
+    include ./menu.jade
+    
+block content
+    
+    script.
+        var data = !{JSON.stringify(stats)};
+    
+    div.chart
+        div#chart_div(style="height: 800px;")

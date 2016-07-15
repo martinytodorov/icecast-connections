@@ -1,0 +1,16 @@
+extend layout
+block sidebar
+  .widget
+    h1 Listeners.metacast.eu
+    include ./menu.jade
+block content
+    script.
+        var data = !{JSON.stringify(stats)};
+
+    input.statbtn(type='button', onclick="location.href='?range=1';", value='Last 24 hours')
+    input.statbtn(type='button', onclick="location.href='?range=3';", value='Last 3 days')
+    input.statbtn(type='button', onclick="location.href='?range=7';", value='Last 7 days')
+
+
+    div.chart
+        div#chart_div(style="height: 800px;")
